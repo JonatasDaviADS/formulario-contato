@@ -1,0 +1,54 @@
+/* Aqui teremos o estilo geral da PÁGINA*/
+
+/* NESTE BLOCO DE CÓDIGO VAMOS DENIFIR O FUNDO NA COR BRANCA E TEXTO PRETO*/
+
+/* BODY - TEM COMO FUNÇÃO DEFINIR O PLANO DE FUNDO GERAL DA PÁGINA, 
+COR DO TEXTO E A FONTE PADRÃO */
+
+body{
+    background-color: #f9f9f9; /* Cinza claro para evitar branco puro */
+    color: #333333; /* Cinza escuro para o texto, confortável para leitura */
+    font-family: Arial, sans-serif;  /* Fonte limpa e legível */
+    margin: 0; /* Remove margens externas padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+/* .container - centraliza o conteúdo e limita a largura para uma boa leitura*/
+.container{
+    max-width: 600px; /* Larhura máxima da caixa*/
+    margin: 50px auto; /* Margem superior inferior de 50px, centraliza horizontalmente*/
+    padding: 20px; /*Espaço interno da borda e conteúdo*/
+    background-color: #ffffff; /* aqui a gente define o fundo branco em relação ao conteúdo*/
+    border-radius: 10px; /* Aqui definimos que o conta é arredondado. Lembre-se que pode alterar o formato*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* sombra suave para profundidade*/
+}
+
+/* h1 com ele podemos criar títulos , o título principal*/
+h1{
+    text-align: center; /* Aqui temos o comando que CENTRALIZA O TEXTO DO TÍTULO*/
+    color: #2c3e50; /* color define A COR DO TEXTO*/
+}
+
+/*Label define o estilo dos rótulos dos campos ex: nome, e-mail, etc */
+label{
+    display: block; /* ocupa a largura da linha como um todo*/
+    margin-top: 15px; /* aqui temos a definição sobre o espaço acima do rótulo*/
+    color: #34495e; /* aqui mais uam vez temos a definição da cor. Mas observe que estamos falando do compo label*/
+    font-weight: bold; /* usando o font-weigth definimos se podemos realcar, destacar em negrito os rótulos*/
+}
+
+/*input, textarea é a parte onde temos o formulário para o usuário preencher */
+input, textarea{
+    width: 100%; /* Ocupa toda a largura disponível*/
+    padding: 10px; /* Espaço interno para digitação confortável*/
+    margin-top: 5px; /*Espaço entre o rótulo e o campo*/
+    border: 1px solid #ccc; /*Borda cinza clatra para deixar leve o visual*/
+    border-radius: 5px; /*Cantos arredondados*/
+    font-size: 16px; /*no font-size escolhemos o tamanho da fonte*/
+    cursor: pointer; /* cursor de mão ao passar o mouse*/
+}
+
+/*button:hover - aqui temos o local onde estilizamos o botão do maouse para ver o efeito quando passamos o mesmo */
+button:hover{
+    background-color: #2ecc71; 
+}
