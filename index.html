@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html> Mostra o tipo de documento: sinaliza ao navegador que estamos usando o HTML5 -->
+<!DOCTYPE html>
+
+<!-- essa parte abaixo o <html lang="pt-br" da início ao elemento raiz do documento HTML-->
+<html lang="pt-br">
+
+<!-- o head da início ao cabeçalho, são as informações que não aparece no corpo-->   
+<head>
+
+    <!-- meta define o conjunto de caracteres como UTF para suportar acentuação-->
+    <meta charset="UTF-8">
+
+    <!-- Nesta parte aqui observamos que existe o ajuste correto para dispositivos móveis-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Aqui temos o comando que permite que demos um título da ABA DO NAVEGADOR-->
+    <title>Página de Contato</title>
+
+    <!-- Importa os arquivos de estilos externos (CSS)-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<!--Corpo visível da página-->
+<body>
+    <!-- Container principal da página-->
+     <div class="Container">
+
+        <!-- h1 permite que criar texto no corpo do container--> 
+        <h1>Entre em Contato</h1>
+
+        <!-- Formulário para envio de mensagem -->
+        <!-- O atricuto action será preenchido depois com o caminho PHP-->
+        <form action="php/processa.php" method="post">
+
+            <!-- Campo Nome-->
+             <label for="nome">Nome:</label>
+             <input type="text" id="nome" name="nome" required>
+
+            <!-- Campo e-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <!-- Campo Mensagem -->
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <!-- Botão de envio do formulário-->
+             <button type="submit">Enviar</button>
+
+        </form>
+
+     </div>
+</body>
+</html>
