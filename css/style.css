@@ -7,7 +7,7 @@ COR DO TEXTO E A FONTE PADRÃO */
 
 body{
     background-color: #f9f9f9; /* Cinza claro para evitar branco puro */
-    color: #333333; /* Cinza escuro para o texto, confortável para leitura */
+    color: #333; /* Cinza escuro para o texto, confortável para leitura */
     font-family: Arial, sans-serif;  /* Fonte limpa e legível */
     margin: 0; /* Remove margens externas padrão */
     padding: 0; /* Remove preenchimento padrão */
@@ -15,12 +15,15 @@ body{
 
 /* .container - centraliza o conteúdo e limita a largura para uma boa leitura*/
 .container{
-    max-width: 600px; /* Larhura máxima da caixa*/
-    margin: 50px auto; /* Margem superior inferior de 50px, centraliza horizontalmente*/
-    padding: 20px; /*Espaço interno da borda e conteúdo*/
-    background-color: #ffffff; /* aqui a gente define o fundo branco em relação ao conteúdo*/
+    width: 100%;
+    max-width: 600px; /* Largura máxima da caixa*/
+    margin: 15px auto; /* Margem superior inferior de 50px, centraliza horizontalmente*/
+    padding: 10px; /*Espaço interno da borda e conteúdo*/
+    background: #fff; /* aqui a gente define o fundo branco em relação ao conteúdo*/
     border-radius: 10px; /* Aqui definimos que o conta é arredondado. Lembre-se que pode alterar o formato*/
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* sombra suave para profundidade*/
+    border: 1px solid red;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* sombra suave para profundidade*/
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
 }
 
 /* h1 com ele podemos criar títulos , o título principal*/
@@ -39,8 +42,8 @@ label{
 
 /*input, textarea é a parte onde temos o formulário para o usuário preencher */
 input, textarea{
-    width: 100%; /* Ocupa toda a largura disponível*/
-    padding: 10px; /* Espaço interno para digitação confortável*/
+    width: 98%; /* Ocupa toda a largura disponível*/
+    padding: 4px; /* Espaço interno para digitação confortável*/
     margin-top: 5px; /*Espaço entre o rótulo e o campo*/
     border: 1px solid #ccc; /*Borda cinza clatra para deixar leve o visual*/
     border-radius: 5px; /*Cantos arredondados*/
@@ -48,7 +51,20 @@ input, textarea{
     cursor: pointer; /* cursor de mão ao passar o mouse*/
 }
 
+.container button {
+    width: 100%;
+    margin-top: 15px; /*Espaço acima do botão*/ 
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
 /*button:hover - aqui temos o local onde estilizamos o botão do maouse para ver o efeito quando passamos o mesmo */
-button:hover{
+.container button :hover{
     background-color: #2ecc71; 
 }
